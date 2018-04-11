@@ -1,6 +1,6 @@
 {
   "name": "@fe6/rcmd",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "本地运行 react 组件",
   "repository": "https://github.com/fe6/rcmd.git",
   "author": "李梦龙 <649076408@qq.com>",
