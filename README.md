@@ -2,6 +2,11 @@
 
 > 本地运行 react 组件命令行工具
 
+[![@fe6/rcmd](https://img.shields.io/npm/v/@fe6/rcmd.svg?style=flat-square)](https://www.npmjs.org/package/@fe6/rcmd)
+[![NPM downloads](http://img.shields.io/npm/dm/@fe6/rcmd.svg?style=flat-square)](https://npmjs.org/package/@fe6/rcmd)
+[![Package Quality](http://npm.packagequality.com/shield/@fe6/rcmd.svg)](http://packagequality.com/#?package=@fe6/rcmd)
+[![NPM downloads](https://img.shields.io/npm/dt/@fe6/rcmd.svg?style=flat-square)](https://npmjs.org/package/@fe6/rcmd)
+
 ## 使用
 
 ```
