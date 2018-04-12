@@ -18,7 +18,7 @@ package.json 配置的例子
 
 ```
 ({
-  "config": { // 打包配置
+  "fe6rcmd": { // 打包配置
     "publicFolder": "examples", // 公共的本地开发的目录
     "entryStyleFile": "index.tsx", // css 入口文件
     "entryStyleFolder": "styles", // css 入口文件夹
@@ -26,7 +26,7 @@ package.json 配置的例子
     "entryFolder": "component", // js 入口文件夹
     "outputFolder": "dist", // 打包输出的文件夹
     "rootFolder": "src", // 源文件的根目录
-    "port": 9092 // 本地开发的端口
+    "port": 3000 // 本地开发的端口
   }
 })
 ```

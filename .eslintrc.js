@@ -1,47 +1,52 @@
-// http://eslint.org/docs/user-guide/configuring
-
-module.exports = {
-  root: true,
-  parser: "babel-eslint",
-  parserOptions: {
-    sourceType: "module"
-  },
+const eslintrc = {
+  extends: ['eslint-config-airbnb'],
   env: {
     browser: true,
+    node: true,
+    jasmine: true,
+    jest: true,
+    es6: true,
   },
-  globals: {
-    "GADEWAY": true,
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true,
+      experimentalObjectRestSpread: true,
+    },
   },
-  extends: "airbnb-base",
-  // required to lint *.vue files
   plugins: [
-    "html",
+    'markdown',
+    'react',
+    'babel',
   ],
-  // check if imports actually resolve
-  "settings": {
-    "import/resolver": {
-      "webpack": {
-        "config": "build/webpack.base.conf.js"
-      }
-    }
+  rules: {
+    'func-names': 0,
+    'arrow-body-style': 0,
+    'react/sort-comp': 0,
+    'react/prop-types': 0,
+    'react/jsx-first-prop-new-line': 0,
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.tsx', '.md'] }],
+    'import/extensions': 0,
+    'import/no-unresolved': 0,
+    'import/no-extraneous-dependencies': 0,
+    'prefer-destructuring': 0,
+    'no-param-reassign': 0,
+    'no-return-assign': 0,
+    'max-len': 0,
+    'consistent-return': 0,
+    'no-redeclare': 0,
+    'react/require-extension': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/anchor-has-content': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    'react/no-danger': 0,
+    'comma-dangle': ['error', 'always-multiline'],
+    'function-paren-newline': 0,
+    'object-curly-newline': 0,
+    'no-restricted-globals': 0,
   },
-  // add your custom rules here
-  "rules": {
-    // don"t require .vue extension when importing
-    "import/extensions": ["error", "always", {
-      "js": "never",
-      "vue": "never"
-    }],
-    "spaced-comment": "off",
-    "no-dupe-keys": "off",
-    "no-console": "off",
-    "no-plusplus": "off",
-    // allow optionalDependencies
-    "import/no-extraneous-dependencies": ["error", {
-      "optionalDependencies": ["test/unit/index.js"]
-    }],
-    "no-param-reassign": ["error", { "props": false }],
-    // allow debugger during development
-    "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0
-  }
-}
+};
+
+module.exports = eslintrc;
